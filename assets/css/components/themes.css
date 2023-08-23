@@ -1,0 +1,55 @@
+.theme-light {
+  --color-primary: #757575;
+  --color-secondary: #bdbdbd;
+  --color-background: #ffffff;
+  --color-text: #4d4d4d;
+  --color-accent: #ff6b5a;
+}
+
+.theme-dark {
+  --color-primary: #1a1a1a;
+  --color-secondary: #4a4a4a;
+  --color-background: #2a2a2a;
+  --color-text: #a8a8a8;
+  --color-accent: #6e8a4a;
+}
+
+.theme-red {
+  --color-primary: #5d0000;
+  --color-secondary: #9d0000;
+  --color-background: #7d0000;
+  --color-text: #e2b2b2;
+  --color-accent: #007d7d;
+}
+
+.theme-green {
+  --color-primary: #005555;
+  --color-secondary: #00dddd;
+  --color-background: #009999;
+  --color-text: #a8d8d8;
+  --color-accent: #9900e2;
+}
+
+.theme-blue {
+  --color-primary: #002244;
+  --color-secondary: #004466;
+  --color-background: #003355;
+  --color-text: #b2c2d2;
+  --color-accent: #e25500;
+}
+
+.theme-yellow {
+  --color-primary: #a08c04;
+  --color-secondary: #c9c206;
+  --color-background: #c1ab05;
+  --color-text: #f2f2c2;
+  --color-accent: #05c15e;
+}
+
+.theme-amber {
+  --color-primary: #8f642d;
+  --color-secondary: #bf8a4d;
+  --color-background: #aa7a40;
+  --color-text: #f2e2c2;
+  --color-accent: #5eaa40;
+}

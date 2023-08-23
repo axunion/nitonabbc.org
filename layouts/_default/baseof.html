@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{ partial "metadata.html" . }}
+    <title>{{ .Title }}</title>
+  </head>
+
+  <body>
+    <div id="viewport">
+      {{ partial "header.html" . }}
+
+      <main>{{ block "main" . }}{{ end }}</main>
+
+      {{ partial "footer.html" . }}
+    </div>
+
+    {{ partial "nav.html" . }}
+
+    {{ $script := resources.Get "ts/main.ts" | js.Build | minify | fingerprint }}
+    <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  </body>
+</html>

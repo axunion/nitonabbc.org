@@ -1,0 +1,15 @@
+sunday_worship:
+  - head: 日曜礼拝
+    deta: 毎週日曜日
+  - head: 朝礼拝
+    deta: 11:00 - 12:30
+  - head: 夕礼拝
+    deta: 14:30 - 15:30
+
+prayer_meeting:
+  - head: 祈祷会
+    deta: 毎週水曜日
+  - head: 午前の部
+    deta: 10:30 - 12:00
+  - head: 夜間の部
+    deta: 19:00 - 20:30

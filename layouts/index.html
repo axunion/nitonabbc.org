@@ -1,0 +1,84 @@
+{{ define "main" }}
+<section id="welcome" class="block" data-scroll="theme-light">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H10V8H4V12H10V22H14V12H20V8H14V2Z"></path></svg>
+
+  <p>
+    A CHURCH FOR WORSHIPING GOD<br />
+    AND LOVING OTHERS
+  </p>
+</section>
+
+<section id="greeting" class="block" data-scroll="theme-amber">
+  <div class="box">
+    <p>仁戸名聖書バプテスト教会は、1963年に創設以来、60年以上にわたり地域の方々にキリストの愛をお伝えしてきました。</p>
+    <p>もし、キリストの愛に触れ、キリストを自分の人生の主として受け入れるなら、誰でも生きがいと希望にあふれた新しい歩みを始めることができると、聖書は教えています。</p>
+    <p>教会での集会や礼拝は、背景や信仰の深さに関係なく、誰でも参加できる場です。気軽にお越しください。</p>
+  </div>
+</section>
+
+<section id="worship" class="block" data-scroll="theme-green">
+  <div class="box">
+    <h2>礼拝のご案内</h2>
+
+    <table>
+      {{ range .Site.Data.dates.worship.sunday_worship }}
+      <tr>
+        <th>{{ .head }}</th>
+        <td>{{ .deta }}</td>
+      </tr>
+      {{ end }}
+    </table>
+
+    <table>
+      {{ range .Site.Data.dates.worship.prayer_meeting }}
+      <tr>
+        <th>{{ .head }}</th>
+        <td>{{ .deta }}</td>
+      </tr>
+      {{ end }}
+    </table>
+  </div>
+</section>
+
+<section id="pastor" class="block" data-scroll="theme-light">
+  <div class="box">
+    <div class="img-card">
+      <div class="text">
+        <h2>牧師</h2>
+        <h3>
+          <span class="en">Kobayashi Hideo</span><br />
+          <span class="ja">小林 秀夫</span>
+        </h3>
+      </div>
+      <div class="img">
+        <img src="{{ .Site.Params.imageUrl }}pastor.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="introduction">
+      <p>1955年、埼玉県秩父市で誕生。7歳の時に父親の転勤で千葉に転居し、以来現在まで千葉に在住。13歳の時に教会に通うようになり、その頃から将来牧師になる事を目指すようになった。</p>
+      <p>24歳の時に、千葉大学理学部在学中に神学校入学を決心し、大学を中退して、日本バプテスト聖書神学校に入学。27歳で卒業後、現在の仁戸名聖書バプテスト教会の牧師に招かれ、現在に至る。</p>
+      <p>趣味は、読書、音楽鑑賞、考古学などの研究。</p>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="img-card">
+      <div class="text">
+        <h2>伝道師</h2>
+        <h3>
+          <span class="en">Kobayashi David</span><br />
+          <span class="ja">小林 太秀</span>
+        </h3>
+      </div>
+      <div class="img">
+        <img src="{{ .Site.Params.imageUrl }}pastor.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="introduction">
+      <p>1955年、埼玉県秩父市で誕生。7歳の時に父親の転勤で千葉に転居し、以来現在まで千葉に在住。13歳の時に教会に通うようになり、その頃から将来牧師になる事を目指すようになった。</p>
+    </div>
+  </div>
+</section>
+{{ end }}

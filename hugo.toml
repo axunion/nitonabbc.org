@@ -1,0 +1,6 @@
+baseURL = 'https://nitonabbc.org/'
+languageCode = 'ja'
+title = '仁戸名聖書バプテスト教会'
+
+[params]
+imageUrl = "https://nitonabbc.org/img/"

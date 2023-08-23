@@ -1,0 +1,53 @@
+.block {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 10vh 40px;
+}
+
+.block > .box {
+  max-width: 100%;
+  min-width: 60%;
+  width: 800px;
+}
+
+.box {
+  position: relative;
+}
+
+.box.fill,
+.box.fix {
+  display: flex;
+  gap: 40px;
+}
+
+.box.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box.fill > .cell {
+  flex: auto;
+}
+
+.box.fix > .cell {
+  flex: 0 1 100%;
+}
+
+@media (max-width: 768px) {
+  .block {
+    padding: 20vh 1em;
+  }
+
+  .box.fill,
+  .box.fix {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

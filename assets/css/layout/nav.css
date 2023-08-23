@@ -1,0 +1,63 @@
+#nav {
+  align-items: center;
+  background: var(--color-background);
+  color: var(--color-text);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  opacity: 0;
+  overflow-y: scroll;
+  position: fixed;
+  text-align: center;
+  transform: scale(0);
+  transition: opacity 0.4s, transform 0s 0.4s;
+  z-index: 11;
+}
+
+#nav.active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0s, transform 0s;
+}
+
+#nav li {
+  font-size: 2vw;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0s 0.4s, transform 0s 0.4s;
+}
+
+#nav a {
+  display: inline-block;
+  padding: 20px;
+}
+
+#nav.active li {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s 0.1s, transform 0.4s 0.1s ease-out;
+}
+
+#nav .close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#nav + .menu-button {
+  opacity: 1;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  transition: opacity 0.4s 0.1s;
+}
+
+#nav.active + .menu-button {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  #nav li {
+    font-size: 100%;
+  }
+}
