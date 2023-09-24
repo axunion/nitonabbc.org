@@ -1,0 +1,20 @@
+#faq {
+  font-size: 2vw;
+}
+
+#faq h3 {
+  border-bottom: var(--color-primary) solid 1px;
+  font-size: 100%;
+  margin: 0 0 2em;
+  padding: 0 1em 0.5em;
+}
+
+#faq p {
+  margin: 0 1em 20vh;
+}
+
+@media (max-width: 768px) {
+  #faq {
+    font-size: 120%;
+  }
+}

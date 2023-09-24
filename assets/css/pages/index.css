@@ -16,7 +16,7 @@
 }
 
 #worship {
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 #worship h2 {
@@ -30,14 +30,14 @@
 #worship table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 3em auto;
+  margin: 2em auto;
   max-width: 25em;
   text-align: center;
 }
 
 #worship th,
 #worship td {
-  padding: 1em;
+  padding: 0.5em;
 }
 
 #pastor .img-card {
@@ -108,7 +108,7 @@
   }
 
   #worship {
-    font-size: 110%;
+    font-size: 120%;
   }
 
   #pastor .img-card .text {
