@@ -1,5 +1,9 @@
 #header {
+  left: 0;
   padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 #header h1 {
