@@ -1,0 +1,9 @@
+#specials {
+  font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+  #specials {
+    font-size: 120%;
+  }
+}

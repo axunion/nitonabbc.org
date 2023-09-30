@@ -1,0 +1,41 @@
+#contact {
+  font-size: 120%;
+}
+
+#contact form {
+  margin: 0 auto 25vh;
+  max-width: 480px;
+}
+
+#contact .title {
+  padding: 0.5em;
+}
+
+#contact .item {
+  margin: 0 0 1em;
+}
+
+#contact .required::after {
+  color: var(--color-accent);
+  content: '*';
+  margin: 0 0 0 0.5em;
+  vertical-align: top;
+}
+
+#contact .wait,
+#contact .done,
+#contact .fail {
+  text-align: center;
+}
+
+#contact .wait svg {
+  animation: plane 2s ease-out infinite, blink 1s infinite;
+  height: 24px;
+  fill: currentColor;
+}
+
+#contact .done p,
+#contact .fail p {
+  display: inline-block;
+  text-align: left;
+}

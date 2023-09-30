@@ -1,2 +1,3 @@
-import './nav.js';
-import './scroll.js';
+import './nav';
+import './scroll';
+import './contact';

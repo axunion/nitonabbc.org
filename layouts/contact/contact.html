@@ -1,0 +1,77 @@
+{{ define "main" }}
+<section id="contact">
+  <div class="block" data-scroll="theme-light">
+    <div class="box input">
+      <h2 class="page-title"><b>Contact</b><small>お問い合わせ</small></h2>
+
+      <form action="">
+        <div class="item">
+          <div class="title">お問い合わせ内容を選択ください</div>
+          <label class="radio">
+            <input type="radio" name="inquiry" value="1" checked />
+            <span class="input-item">教会の場所や駐車場について</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="inquiry" value="2" />
+            <span class="input-item">礼拝の時間や内容について</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="inquiry" value="3" />
+            <span class="input-item">その他</span>
+          </label>
+        </div>
+
+        <div class="item">
+          <div class="title">ご希望の返信方法を選択ください</div>
+          <label class="radio">
+            <input type="radio" name="reply" value="1" checked />
+            <span class="input-item">メール</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="reply" value="2" />
+            <span class="input-item">電話</span>
+          </label>
+        </div>
+
+        <div class="item">
+          <div class="title required">メールアドレス</div>
+          <input class="input-item" type="email" maxlength="128" name="email" required />
+        </div>
+
+        <div class="item">
+          <div class="title">電話番号</div>
+          <input class="input-item" type="tel" maxlength="12" name="tel" />
+        </div>
+
+        <div class="item">
+          <div class="title">お名前</div>
+          <input class="input-item" type="text" maxlength="64" name="name" />
+        </div>
+
+        <button type="submit" class="button">送信</button>
+      </form>
+    </div>
+
+    <div class="box wait hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.5 1.3457C3.58425 1.3457 3.66714 1.36699 3.74096 1.4076L22.2034 11.562C22.4454 11.695 22.5337 11.9991 22.4006 12.241C22.3549 12.3241 22.2865 12.3925 22.2034 12.4382L3.74096 22.5925C3.499 22.7256 3.19497 22.6374 3.06189 22.3954C3.02129 22.3216 3 22.2387 3 22.1544V1.8457C3 1.56956 3.22386 1.3457 3.5 1.3457ZM5 4.38261V11.0001H10V13.0001H5V19.6175L18.8499 12.0001L5 4.38261Z"></path></svg>
+    </div>
+
+    <div class="box done hidden">
+      <p>
+        お問い合わせありがとうございます。<br />
+        確認次第ご返信をさせていただきます。
+      </p>
+    </div>
+
+    <div class="box fail hidden">
+      <p>
+        送信できませんでした。<br />
+        恐れ入りますが、しばらくたってからお試しください。
+      </p>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,47 @@
+.input-item {
+  border: var(--color-primary) solid 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  font: inherit;
+  line-height: 1;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.input-item[type='text'],
+.input-item[type='email'],
+.input-item[type='tel'] {
+  color: inherit;
+  outline: 0;
+  padding: 1em;
+}
+
+.input-item[type='text']:focus,
+.input-item[type='email']:focus,
+.input-item[type='tel']:focus {
+  border: var(--color-accent) solid 1px;
+}
+
+.radio {
+  cursor: pointer;
+  display: block;
+  margin: 0.5em 0;
+}
+
+.radio input {
+  display: none;
+}
+
+.radio span {
+  background: var(--color-secondary);
+  border: var(--color-secondary) solid 1px;
+  color: var(--color-primary);
+  padding: 1em 2em;
+}
+
+.radio :checked + span {
+  background: var(--color-background);
+  border-color: var(--color-primary);
+  color: var(--color-text);
+}

@@ -16,7 +16,6 @@
 }
 
 #access address {
-  background: white;
   border: var(--color-secondary) solid 1px;
   border-radius: 4px;
   display: inline-block;

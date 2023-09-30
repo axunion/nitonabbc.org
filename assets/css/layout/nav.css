@@ -11,7 +11,7 @@
   text-align: center;
   transform: scale(0);
   transition: opacity 0.4s, transform 0s 0.4s;
-  z-index: 11;
+  z-index: 1111;
 }
 
 #nav.active {
@@ -45,11 +45,11 @@
 }
 
 #nav + .menu-button {
-  opacity: 1;
   position: fixed;
   right: 10px;
   top: 10px;
   transition: opacity 0.4s 0.1s;
+  z-index: 11;
 }
 
 #nav.active + .menu-button {
