@@ -3,4 +3,5 @@ languageCode = 'ja'
 title = '仁戸名聖書バプテスト教会'
 
 [params]
-imageUrl = "https://nitonabbc.org/img/"
+description = "仁戸名聖書バプテスト教会は、1963年に創設以来、60年以上にわたり地域の方々にキリストの愛をお伝えしてきた教会です。"
+imgDir = "https://nitonabbc.org/img/"

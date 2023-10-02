@@ -30,7 +30,7 @@
 }
 
 #access .postcode::before {
-  content: '〒';
+  content: "〒";
 }
 
 #access .tel {
@@ -38,7 +38,7 @@
 }
 
 #access .tel::before {
-  content: '℡';
+  content: "℡";
 }
 
 #access .guidance {
@@ -47,7 +47,7 @@
 }
 
 #access dl {
-  margin: 0 0 2em;
+  margin: 2em;
 }
 
 #access dt {

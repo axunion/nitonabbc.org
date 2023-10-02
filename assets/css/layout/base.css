@@ -13,7 +13,7 @@
 }
 
 html {
-  font: 100%/1.5 -apple-system, BlinkMacSystemFont, Roboto, Helvetica, 'Noto Sans JP', 'Yu Gothic', sans-serif;
+  font: 100%/1.5 -apple-system, BlinkMacSystemFont, Roboto, Helvetica, "Noto Sans JP", "Yu Gothic", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -39,7 +39,7 @@ ul {
 }
 
 p {
-  font-feature-settings: 'palt';
+  font-feature-settings: "palt";
   letter-spacing: 0.1em;
   line-height: 1.8;
   margin: 1em 0;
@@ -71,19 +71,4 @@ img {
 
 .hidden {
   display: none;
-}
-
-.page-title {
-  margin: 0 0 40vh;
-}
-
-.page-title > b {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 150%;
-  font-weight: normal;
-}
-
-.page-title > small {
-  font-weight: normal;
-  margin: 0 0 0 0.5em;
 }

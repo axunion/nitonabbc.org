@@ -1,0 +1,14 @@
+.page-title {
+  margin: 0 0 40vh;
+}
+
+.page-title > b {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 150%;
+  font-weight: normal;
+}
+
+.page-title > small {
+  font-weight: normal;
+  margin: 0 0 0 0.5em;
+}

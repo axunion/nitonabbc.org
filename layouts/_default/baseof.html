@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     {{ partial "metadata.html" . }}
-    <title>{{ .Title }}</title>
+    <title>{{ block "title" . }}{{ end }}{{ .Site.Title }}</title>
   </head>
 
   <body>

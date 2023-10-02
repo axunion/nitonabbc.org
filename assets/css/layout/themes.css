@@ -7,11 +7,11 @@
 }
 
 .theme-dark {
-  --color-primary: #1a1a1a;
+  --color-primary: #757575;
   --color-secondary: #4a4a4a;
   --color-background: #2a2a2a;
   --color-text: #a8a8a8;
-  --color-accent: #6e8a4a;
+  --color-accent: #29cccc;
 }
 
 .theme-red {
@@ -39,17 +39,17 @@
 }
 
 .theme-yellow {
-  --color-primary: #a08c04;
-  --color-secondary: #c9c206;
-  --color-background: #c1ab05;
-  --color-text: #f2f2c2;
-  --color-accent: #05c15e;
+  --color-primary: #4bb344;
+  --color-secondary: #fde0ff;
+  --color-background: #fff462;
+  --color-text: #4d491d;
+  --color-accent: #14ccc0;
 }
 
-.theme-amber {
-  --color-primary: #8f642d;
-  --color-secondary: #bf8a4d;
-  --color-background: #aa7a40;
-  --color-text: #f2e2c2;
-  --color-accent: #5eaa40;
+.theme-brown {
+  --color-primary: #946d44;
+  --color-secondary: #ba8a56;
+  --color-background: #6f5436;
+  --color-text: #e6e6e6;
+  --color-accent: #14cc73;
 }

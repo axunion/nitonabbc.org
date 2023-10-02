@@ -2,8 +2,107 @@
   font-size: 2vw;
 }
 
+#specials .message {
+  padding: 1em;
+}
+
+#specials .message h2 {
+  color: var(--color-accent);
+  font-size: 120%;
+  text-align: center;
+}
+
+#specials .list {
+  margin: 0 auto 40vh;
+  max-width: 600px;
+}
+
+#specials .list li {
+  border-bottom: var(--color-secondary) solid 1px;
+  padding: 10vh 0;
+}
+
+#specials .list h3 {
+  font-size: 120%;
+  margin: 1em 0;
+}
+
+#specials .list .link {
+  background: var(--color-accent);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--color-background);
+  cursor: pointer;
+  display: block;
+  margin: 1em 0;
+  padding: 0.5em;
+  text-align: center;
+}
+
+#specials .list .link:hover {
+  background: transparent;
+  border: var(--color-accent) solid 1px;
+  color: var(--color-accent);
+}
+
+#specials article {
+  margin: auto;
+  max-width: 600px;
+}
+
+#specials article h2 {
+  font-size: 150%;
+  margin: 1em 0;
+}
+
+#specials article a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+#specials article hr {
+  border: 0;
+  margin: 25vh 0;
+}
+
+#specials .image {
+  margin: 2em 0;
+  text-align: center;
+}
+
+#specials .table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1.5vw;
+  margin: 2em auto;
+  width: 100%;
+}
+
+#specials .table th {
+  background: var(--color-primary);
+  border: var(--color-background) solid 1px;
+  color: var(--color-background);
+  font-weight: normal;
+  padding: 0.5em 1em;
+  text-align: left;
+  width: 35%;
+}
+
+#specials .table td {
+  border: var(--color-primary) solid 1px;
+  padding: 0.5em 1em;
+}
+
+#specials .table .time {
+  text-align: right;
+}
+
 @media (max-width: 768px) {
   #specials {
     font-size: 120%;
+  }
+
+  #specials .table {
+    font-size: 1rem;
   }
 }

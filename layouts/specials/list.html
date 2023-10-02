@@ -1,0 +1,23 @@
+{{ define "title" }}特別集会 - {{ end }} {{ define "main" }}
+<section id="specials" class="block" data-scroll="theme-light">
+  <div class="box">
+    <div class="message">
+      <h2>特別集会のご案内</h2>
+      <p>毎週の礼拝とは違った、特別な礼拝を定期的に開催しております。</p>
+      <p>初めての方や、まだ慣れていない方にも、特に理解しやすい内容となっております。</p>
+    </div>
+
+    <ul class="list">
+      {{ range .RegularPagesRecursive }}
+      <li>
+        <h3>{{ .Title }}</h3>
+        <figure class="image">
+          <img src="{{ .Site.Params.imgDir }}{{ .Params.cover }}" alt="" />
+        </figure>
+        <a class="link" href="{{ .RelPermalink }}">詳細</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

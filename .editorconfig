@@ -3,7 +3,6 @@
 # top-most EditorConfig file
 root = true
 
-# Default setting
 [*]
 indent_style = space
 indent_size = 4
@@ -13,7 +12,7 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 max_line_length = off
 
-[*.{sh,html,css,js,ts,json,yml,toml,md}]
+[*.{html,css,js,ts,json,yml,toml,md}]
 indent_size = 2
 
 [*.md]

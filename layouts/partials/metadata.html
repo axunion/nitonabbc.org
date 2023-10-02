@@ -1,11 +1,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="仁戸名聖書バプテスト教会は、1963年に創設以来、60年以上にわたり地域の方々にキリストの愛をお伝えしてきた教会です。" />
+<meta name="description" content="{{ .Site.Params.description }}" />
 <meta property="og:title" content="{{ .Site.Title }}" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://nitonabbc.org/img/building.jpg" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:description" content="仁戸名聖書バプテスト教会は、1963年に創設以来、60年以上にわたり地域の方々にキリストの愛をお伝えしてきた教会です。" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 {{ $styles := resources.Match "css/layout/*.css" }}
