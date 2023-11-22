@@ -7,8 +7,4 @@ categories:
 tags:
   - ""
 cover: ""
-schedules:
-  - label: ""
-    date: ""
-    time: ""
 ---

@@ -43,11 +43,11 @@
 
 #access .guidance {
   font-size: 1.5vw;
-  margin: 2em 0;
+  padding: 1em;
 }
 
 #access dl {
-  margin: 2em;
+  margin: 2em 1em;
 }
 
 #access dt {
@@ -55,7 +55,7 @@
 }
 
 #access dd {
-  margin: 0.5em 0 1em 1.5em;
+  margin: 0.5em 0 1.5em;
 }
 
 @media (max-width: 768px) {

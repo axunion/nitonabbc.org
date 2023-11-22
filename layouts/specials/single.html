@@ -2,7 +2,13 @@
 {{ define "main" }}
 <section id="specials" class="block" data-scroll="theme-light">
   <div class="box">
-    <article>{{ .Content }}</article>
+    <article>
+      {{ .Content }}
+
+      <small class="faq">
+        <a href="/faq">教会に関する一般的な質問と回答はこちらをご覧ください</a>
+      </small>
+    </article>
   </div>
 </section>
 {{ end }}
