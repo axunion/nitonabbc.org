@@ -30,7 +30,7 @@
   border: currentColor solid 1px;
   border-left-width: 0.25em;
   border-right-width: 0.25em;
-  border-radius: 4px;
+  border-radius: 2px;
   color: var(--color-accent);
   font-size: 120%;
   margin: 1em 0;

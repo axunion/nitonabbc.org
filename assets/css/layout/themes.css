@@ -3,7 +3,9 @@
   --color-secondary: #bdbdbd;
   --color-background: #ffffff;
   --color-text: #4d4d4d;
+  --color-subtext: #a0a0a0;
   --color-accent: #ff6b5a;
+  --color-accent-complement: #56a280;
 }
 
 .theme-dark {
@@ -11,7 +13,9 @@
   --color-secondary: #4a4a4a;
   --color-background: #2a2a2a;
   --color-text: #a8a8a8;
+  --color-subtext: #808080;
   --color-accent: #29cccc;
+  --color-accent-complement: #cc297a;
 }
 
 .theme-red {
@@ -19,7 +23,9 @@
   --color-secondary: #9d0000;
   --color-background: #7d0000;
   --color-text: #e2b2b2;
+  --color-subtext: #e34444;
   --color-accent: #007d7d;
+  --color-accent-complement: #3498db;
 }
 
 .theme-green {
@@ -27,7 +33,9 @@
   --color-secondary: #00dddd;
   --color-background: #009999;
   --color-text: #a8d8d8;
+  --color-subtext: #a0a0a0;
   --color-accent: #9900e2;
+  --color-accent-complement: #7d003e;
 }
 
 .theme-blue {
@@ -35,7 +43,9 @@
   --color-secondary: #004466;
   --color-background: #003355;
   --color-text: #b2c2d2;
+  --color-subtext: #3f88d1;
   --color-accent: #e25500;
+  --color-accent-complement: #00e357;
 }
 
 .theme-yellow {
@@ -43,7 +53,9 @@
   --color-secondary: #fde0ff;
   --color-background: #fff462;
   --color-text: #4d491d;
+  --color-subtext: #807930;
   --color-accent: #14ccc0;
+  --color-accent-complement: #cc147c;
 }
 
 .theme-brown {
@@ -51,5 +63,7 @@
   --color-secondary: #ba8a56;
   --color-background: #6f5436;
   --color-text: #e6e6e6;
+  --color-subtext: #808080;
   --color-accent: #14cc73;
+  --color-accent-complement: #cc14c9;
 }
