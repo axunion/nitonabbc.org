@@ -48,6 +48,7 @@
   margin: 2em 1em 0;
   padding: 1em;
   text-align: center;
+  text-decoration: none;
 }
 
 #specials .list .link:hover {
@@ -65,48 +66,13 @@
   color: var(--color-accent);
   font-size: 150%;
   margin: 1em 0;
+  text-align: center;
 }
 
-#specials article a {
-  color: var(--color-accent);
-  text-decoration: underline;
-}
-
-#specials article dl {
-  margin: 15vh 0;
-}
-
-#specials article dl dt {
-  background: var(--color-primary);
-  color: var(--color-background);
-  letter-spacing: 0.05em;
-  padding: 0.5em 1em;
-}
-
-#specials article dl dd {
-  border: var(--color-primary) solid 1px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  justify-content: end;
-  margin: 0;
-  padding: 1em 1em 1.5em;
-}
-
-#specials blockquote {
-  border-radius: 2px;
-  box-shadow: 0 1px 4px var(--color-text);
-  margin: 2em 0;
-  padding: 0.5em 1em;
-}
-
-#specials blockquote cite {
-  color: var(--color-accent-complement);
-  display: block;
-  font-size: 85%;
-  font-style: normal;
-  margin: 0.5em 0 0;
-  text-align: right;
+#specials article h3 {
+  font-size: 120%;
+  margin: 1em 0;
+  text-align: center;
 }
 
 #specials .image {
@@ -123,6 +89,57 @@
 
 #specials .faq::after {
   content: "💭";
+}
+
+#specials hr {
+  border: 0;
+  margin: 10vh 0;
+}
+
+#specials a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+#specials iframe {
+  height: 40vh;
+  margin: 1em 0;
+  width: 100%;
+}
+
+#specials dl {
+  border: var(--color-primary) solid 1px;
+  margin: 2em 0;
+}
+
+#specials dl dt {
+  background: var(--color-primary);
+  color: var(--color-background);
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  padding: 0.5em 1em;
+}
+
+#specials dl dd {
+  line-height: 2em;
+  margin: 1em 1em 1.5em;
+  text-align: right;
+}
+
+#specials blockquote {
+  border-radius: 2px;
+  box-shadow: 0 1px 4px var(--color-text);
+  margin: 2em 0;
+  padding: 0.5em 1em;
+}
+
+#specials blockquote cite {
+  color: var(--color-accent-complement);
+  display: block;
+  font-size: 85%;
+  font-style: normal;
+  margin: 0.5em 0 0;
+  text-align: right;
 }
 
 @media (max-width: 768px) {

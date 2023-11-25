@@ -13,6 +13,8 @@ cover: "news/2023-autumn-evangelistic-01.jpg"
 
 {{< image src="news/2023-autumn-evangelistic-01.jpg" alt="" >}}
 
+---
+
 第1回
 : 2023年10月27日（金） 10:30 - 12:00
 

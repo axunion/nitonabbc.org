@@ -14,6 +14,8 @@ cover: "news/2023-summer-evangelistic-01.jpg"
 {{< image src="news/2023-summer-evangelistic-01.jpg" alt="" >}}
 {{< image src="news/2023-summer-evangelistic-02.jpg" alt="" >}}
 
+---
+
 第1回
 : 2023年6月23日（金） 10:30 - 12:00
 
@@ -29,6 +31,7 @@ cover: "news/2023-summer-evangelistic-01.jpg"
 第4回
 : 2023年6月25日（日） 14:30 - 16:00
 
+---
 
 毎年恒例の初夏の特別集会が今年も催されます。今回のテーマは「神を知る」です。
 
