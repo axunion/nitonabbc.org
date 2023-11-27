@@ -6,12 +6,12 @@ categories:
   - "christmas"
 tags:
   - "2023"
-cover: "news/2023-christmas-01.jpg"
+cover: "brochure.jpg"
 ---
 
 ## 2023 クリスマスコンサート
 
-{{< image src="news/2023-christmas-01.jpg" alt="" >}}
+{{< image src="brochure.jpg" alt="" >}}
 
 ---
 

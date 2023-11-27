@@ -1,5 +1,5 @@
 {{ $src := .Get "src" }}
 {{ $alt := .Get "alt" }}
 <figure class="image">
-  <img src="{{ .Site.Params.imgDir }}{{ $src }}" alt="{{ $alt }}" />
+  <img src="{{ $src }}" alt="{{ $alt }}" />
 </figure>

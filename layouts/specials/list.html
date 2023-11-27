@@ -1,12 +1,12 @@
-{{ define "title" }}特別集会 - {{ end }}
+{{ define "title" }}イベント - {{ end }}
 {{ define "main" }}
 <section id="specials" class="block" data-scroll="theme-light">
   <div class="box">
     <div class="message">
       <div>
-        <h2>特別集会のご案内</h2>
-        <p>毎週の礼拝とは違った、特別な礼拝を定期的に開催しております。</p>
-        <p>初めての方や、まだ慣れていない方にも、特に理解しやすい内容となっております。</p>
+        <h2>イベントのご案内</h2>
+        <p>初めて教会を訪れる方やまだ教会に慣れていない方にも、理解しやすいような特別礼拝を定期的に開催しています。</p>
+        <p>また、賛美コンサートや食事会、子供向けの遠足なども積極的に開催しています。</p>
       </div>
     </div>
 
@@ -15,7 +15,7 @@
       <li>
         <h3>{{ .Title }}</h3>
         <figure class="image">
-          <img src="{{ .Site.Params.imgDir }}{{ .Params.cover }}" alt="" />
+          <img src="{{ .RelPermalink }}{{ .Params.cover }}" alt="" />
         </figure>
         <a class="link" href="{{ .RelPermalink }}">詳細</a>
       </li>

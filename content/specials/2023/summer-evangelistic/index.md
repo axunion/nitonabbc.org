@@ -6,13 +6,13 @@ categories:
   - "evangelistic"
 tags:
   - "2023"
-cover: "news/2023-summer-evangelistic-01.jpg"
+cover: "brochure.jpg"
 ---
 
 ## 2023 初夏の特別集会
 
-{{< image src="news/2023-summer-evangelistic-01.jpg" alt="" >}}
-{{< image src="news/2023-summer-evangelistic-02.jpg" alt="" >}}
+{{< image src="brochure.jpg" alt="" >}}
+{{< image src="brochure-back.jpg" alt="" >}}
 
 ---
 

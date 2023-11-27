@@ -5,6 +5,12 @@
             "options": {
                 "parser": "markdown-nocjsp"
             }
+        },
+        {
+            "files": ["*.html"],
+            "options": {
+                "parser": "go-template"
+            }
         }
     ]
 }

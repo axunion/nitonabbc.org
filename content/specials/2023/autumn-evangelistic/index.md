@@ -6,12 +6,12 @@ categories:
   - "evangelistic"
 tags:
   - "2023"
-cover: "news/2023-autumn-evangelistic-01.jpg"
+cover: "brochure.jpg"
 ---
 
 ## 2023 秋の特別集会
 
-{{< image src="news/2023-autumn-evangelistic-01.jpg" alt="" >}}
+{{< image src="brochure.jpg" alt="" >}}
 
 ---
 
