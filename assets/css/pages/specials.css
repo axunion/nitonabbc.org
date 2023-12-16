@@ -5,8 +5,6 @@
 }
 
 #specials .message {
-  display: flex;
-  justify-content: center;
   padding: 1em;
 }
 
@@ -75,30 +73,14 @@
   text-align: center;
 }
 
-#specials .image {
-  margin: 2em 0;
-  text-align: center;
-}
-
-#specials .faq {
-  display: block;
-  font-size: 100%;
-  margin: 25vh 0 0;
-  padding: 0 2em;
-}
-
-#specials .faq::after {
-  content: "💭";
+#specials a {
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 
 #specials hr {
   border: 0;
   margin: 10vh 0;
-}
-
-#specials a {
-  color: var(--color-accent);
-  text-decoration: underline;
 }
 
 #specials iframe {
@@ -126,20 +108,40 @@
   text-align: right;
 }
 
-#specials blockquote {
+#specials .image {
+  margin: 2em 0;
+  text-align: center;
+}
+
+#specials .faq {
+  display: block;
+  font-size: 100%;
+  margin: 25vh 2em 0;
+}
+
+#specials .faq::after {
+  content: "💭";
+}
+
+#specials .verse {
   border-radius: 2px;
   box-shadow: 0 1px 4px var(--color-text);
   margin: 2em 0;
   padding: 0.5em 1em;
 }
 
-#specials blockquote cite {
+#specials .verse cite {
   color: var(--color-accent-complement);
   display: block;
   font-size: 85%;
   font-style: normal;
   margin: 0.5em 0 0;
   text-align: right;
+}
+
+#specials .note {
+  color: var(--color-accent);
+  margin: 1em;
 }
 
 @media (max-width: 768px) {
