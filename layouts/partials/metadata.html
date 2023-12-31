@@ -7,6 +7,7 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:description" content="{{ .Site.Params.description }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
+<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 
 {{ $styles := resources.Match "css/layout/*.css" }}
 {{ $styles = $styles | append (resources.Match "css/components/*.css") }}
