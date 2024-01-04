@@ -5,17 +5,18 @@
     <div class="message">
       <h2>イベントのご案内</h2>
       <p>初めて教会を訪れる方や、まだ教会に慣れていない方にもご理解いただきやすいように、特別礼拝を定期的に開催しています。</p>
-      <p>また、賛美コンサートや食事会、子供向けの遠足なども積極的に開催しています。</p>
+      <p>また、賛美コンサートや食事会、子供向けの遠足なども行っています。</p>
     </div>
 
     <ul class="articles">
       {{ range (.Paginator 5).Pages }}
       <li>
         <h3>{{ .Title }}</h3>
-        <figure class="image">
-          <img src="{{ .RelPermalink }}{{ .Params.cover }}" alt="" />
-        </figure>
-        <a class="link" href="{{ .RelPermalink }}">詳細</a>
+        <a href="{{ .RelPermalink }}">
+          <figure class="image">
+            <img src="{{ .RelPermalink }}{{ .Params.cover }}" alt="" />
+          </figure>
+        </a>
       </li>
       {{ end }}
     </ul>

@@ -17,7 +17,7 @@
 
 #specials .articles {
   margin: 0;
-  padding: 20vh 0;
+  padding: 10vh 0;
 }
 
 #specials .articles li {
@@ -25,34 +25,14 @@
 }
 
 #specials .articles h3 {
-  border: currentColor solid 1px;
-  border-left-width: 0.25em;
-  border-right-width: 0.25em;
-  border-radius: 2px;
   color: var(--color-accent);
   font-size: 120%;
-  margin: 1em 0;
-  padding: 1em 0;
+  margin: 0 0 1em;
   text-align: center;
 }
 
-#specials .articles .link {
-  background: var(--color-accent);
-  border-radius: 2em;
-  box-sizing: border-box;
-  color: var(--color-background);
-  cursor: pointer;
+#specials .articles a {
   display: block;
-  margin: 2em 1em 0;
-  padding: 1em;
-  text-align: center;
-  text-decoration: none;
-}
-
-#specials .articles .link:hover {
-  background: transparent;
-  border: var(--color-accent) solid 1px;
-  color: var(--color-accent);
 }
 
 #specials .pagination {
@@ -63,8 +43,8 @@
 }
 
 #specials .pagination .page-link {
-  background: var(--color-accent-complement);
-  border: var(--color-accent-complement) solid 1px;
+  background: var(--color-accent);
+  border: var(--color-accent) solid 1px;
   color: var(--color-background);
   border-radius: 4px;
   display: block;
@@ -75,7 +55,7 @@
 
 #specials .pagination .page-link[href] {
   background: transparent;
-  color: var(--color-accent-complement);
+  color: var(--color-accent);
 }
 
 #specials .pagination .disabled,
@@ -138,7 +118,7 @@
 }
 
 #specials .image {
-  margin: 2em 0;
+  margin: 1em 0;
   text-align: center;
 }
 
