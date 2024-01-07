@@ -42,7 +42,7 @@
 
 @media (max-width: 768px) {
   .block {
-    padding: 80px 1em;
+    padding: 80px 1.5em;
   }
 
   .box.fill,
