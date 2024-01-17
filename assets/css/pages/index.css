@@ -5,7 +5,7 @@
 
 #welcome p {
   animation: fadeUpIn 4s ease-out;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   margin: 40px 0 0;
   text-align: center;
@@ -20,7 +20,7 @@
 }
 
 #worship h2 {
-  font-family: Georgia, 'Times New Roman', 'Hiragino Mincho Pro', 'Yu Mincho', serif;
+  font-family: Georgia, "Times New Roman", "Hiragino Mincho Pro", "Yu Mincho", serif;
   font-size: 150%;
   letter-spacing: 0.1em;
   margin: 0;
@@ -32,12 +32,15 @@
   border-spacing: 0;
   margin: 2em auto;
   max-width: 25em;
-  text-align: center;
 }
 
-#worship th,
+#worship th {
+  padding: 0.25em 0.5em 0.25em 0.25em;
+  text-align: right;
+}
+
 #worship td {
-  padding: 0.5em;
+  padding: 0.25em 0.25em 0.25em 0.5em;
 }
 
 #pastor .img-card {
@@ -47,19 +50,19 @@
 #pastor .img-card .text {
   bottom: 0;
   color: #ffffffdd;
-  font-family: Georgia, 'Times New Roman', 'Hiragino Mincho Pro', 'Yu Mincho', serif;
+  font-family: Georgia, "Times New Roman", "Hiragino Mincho Pro", "Yu Mincho", serif;
   font-size: 1.5vw;
   left: 0;
-  padding: 2em 1em;
+  padding: 1em;
   position: absolute;
   right: 0;
   z-index: 1;
 }
 
 #pastor .img-card h2 {
-  font-size: 100%;
+  font-size: 75%;
   font-weight: normal;
-  margin: 0 0 0.5em;
+  margin: 0;
 }
 
 #pastor .img-card h3 {
@@ -73,11 +76,12 @@
 }
 
 #pastor .img-card .ja {
+  font-size: 150%;
   letter-spacing: 0.1em;
 }
 
 #pastor .img-card .img {
-  border-radius: 20px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -103,7 +107,7 @@
   }
 
   #greeting {
-    font-size: 120%;
+    font-size: 100%;
   }
 
   #worship {
