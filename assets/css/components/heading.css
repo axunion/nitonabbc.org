@@ -1,5 +1,6 @@
 .page-title {
-  margin: 0 0 40vh;
+  font-size: 2vw;
+  margin: 0 0 25vh;
 }
 
 .page-title > b {
@@ -11,4 +12,10 @@
 .page-title > small {
   font-weight: normal;
   margin: 0 0 0 0.5em;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 24px;
+  }
 }

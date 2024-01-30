@@ -10,7 +10,7 @@
 }
 
 #faq h3::before {
-  content: '💬';
+  content: "💬";
 }
 
 #faq p {
