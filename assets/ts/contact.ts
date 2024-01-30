@@ -1,3 +1,13 @@
+declare const grecaptcha: {
+  ready(callback: () => void): Promise<void>;
+  execute(siteKey: string, options: { action: string }): Promise<string>;
+};
+
+interface PostResponse {
+  result: "done" | "error";
+  error: string;
+}
+
 export const setupContactPage = () => {
   const contact = document.getElementById("contact");
 
@@ -11,40 +21,48 @@ export const setupContactPage = () => {
     contactForm.addEventListener("submit", (event: Event) => {
       event.preventDefault();
 
-      if (confirm("送信してよろしいですか？")) {
-        const className = "hidden";
-        const postData = new FormData(contactForm);
+      const siteKey = "6LemGUgpAAAAAHNy3XuUPkWhP2KZXkp1EfmC5lDh";
+      const postUrl = "https://script.google.com/macros/s/AKfycbwVrcTOx7j6Joi6ia4Hpe7IDoq_zPIcl-MM-Sd8QFfVGwuTiMtQfD7AmEQ046UYhGxD/exec";
+      const className = "hidden";
+      const formData = new FormData(contactForm);
 
-        window.scrollTo(0, 0);
-        boxInput.classList.add(className);
-        boxWait.classList.remove(className);
+      boxInput.classList.add(className);
+      boxWait.classList.remove(className);
+      window.scrollTo(0, 0);
 
-        fetch("../api.php", {
-          method: "POST",
-          body: postData,
-        })
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error("Network response was not ok");
-            }
+      grecaptcha.ready(function () {
+        grecaptcha.execute(siteKey, { action: "submit" }).then(function (token) {
+          formData.append("type", "000000");
+          formData.append("recaptcha", token);
 
-            return response.text();
+          const postData = Object.fromEntries(formData.entries());
+
+          fetch(postUrl, {
+            method: "POST",
+            body: JSON.stringify(postData),
           })
-          .then((result) => {
-            boxWait.classList.add(className);
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Network response was not ok");
+              }
 
-            if ("1" === result) {
-              boxDone.classList.remove(className);
-            } else {
+              return response.json();
+            })
+            .then((responseData: PostResponse) => {
+              boxWait.classList.add(className);
+
+              if (responseData.result === "done") {
+                boxDone.classList.remove(className);
+              } else {
+                boxFail.classList.remove(className);
+              }
+            })
+            .catch((error) => {
+              boxWait.classList.add(className);
               boxFail.classList.remove(className);
-            }
-          })
-          .catch((error) => {
-            boxWait.classList.add(className);
-            boxFail.classList.remove(className);
-            console.error(error);
-          });
-      }
+            });
+        });
+      });
     });
   }
 };

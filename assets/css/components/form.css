@@ -9,17 +9,17 @@
   width: 100%;
 }
 
-.input-item[type='text'],
-.input-item[type='email'],
-.input-item[type='tel'] {
+.input-item[type="text"],
+.input-item[type="email"],
+.input-item[type="tel"] {
   color: inherit;
   outline: 0;
   padding: 1em;
 }
 
-.input-item[type='text']:focus,
-.input-item[type='email']:focus,
-.input-item[type='tel']:focus {
+.input-item[type="text"]:focus,
+.input-item[type="email"]:focus,
+.input-item[type="tel"]:focus {
   border: var(--color-accent) solid 1px;
 }
 
@@ -30,14 +30,15 @@
 }
 
 .radio input {
-  display: none;
+  position: absolute;
+  visibility: hidden;
 }
 
 .radio span {
   background: var(--color-secondary);
   border: var(--color-secondary) solid 1px;
   color: var(--color-primary);
-  padding: 1em 2em;
+  padding: 1em;
 }
 
 .radio :checked + span {
